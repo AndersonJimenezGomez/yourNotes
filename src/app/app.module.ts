@@ -5,26 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 //routes
-import{app_routing} from './app.routes';
+import{APP_ROUTING} from './app.routes';
 
 
 //components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SignInComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    app_routing
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

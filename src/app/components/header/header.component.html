@@ -3,7 +3,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
     <a class="navbar-brand" href="#">
-        <img src="assets/images/notas.png" alt="">
+        <img src="assets/images/notas.png" alt="" [routerLink]="['home']" routerLinkActive="router-link-active">
     </a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -11,10 +11,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['about']">About <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
+
+            <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
@@ -25,19 +26,21 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px;" type="submit">Search</button>
-            <span class="navbar-text">
-                    <button type="button" class="btn btn-light" style="margin-right:5px; margin-left: 5px;">Sig in</button>
+            <button class="btn btn-outline-light" style="margin-right:5px; " type="submit ">Search</button>
+            <span class="navbar-text ">
+                    <button type="button " class="btn btn-outline-light " style="margin-right:5px; margin-left: 5px; ">Sig in</button>
                   </span>
             <span>
-                     <button type="button" class="btn btn-light" style="margin-left:5px">Login</button>
+                     <button type="button " class="btn btn-outline-light " style="margin-left:5px ">Login</button>
                   </span>
+
+
         </form>
     </div>
 </nav>
