@@ -11,19 +11,21 @@ import{APP_ROUTING} from './app.routes';
 //components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SignInComponent,
     LoginComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SignUpComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

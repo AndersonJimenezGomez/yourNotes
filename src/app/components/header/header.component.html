@@ -8,11 +8,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="['home']" routerLinkActive="active">Home <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" [routerLink]="['about']">About <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="['about']" routerLinkActive="active">About <span class="sr-only">(current)</span></a>
             </li>
 
         </ul>
@@ -20,10 +20,10 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" style="margin-right:5px; " type="submit ">Search</button>
             <span class="navbar-text ">
-                    <button type="button " class="btn btn-outline-light " style="margin-right:5px; margin-left: 5px; ">Sig in</button>
+                    <button type="button " class="btn btn-outline-light " style="margin-right:5px; margin-left: 5px; " [routerLink]="['signUp']" >Sign up</button>
                   </span>
             <span>
-                     <button type="button " class="btn btn-outline-light " style="margin-left:5px" [routerLink]="['login']" (click)=" show = !show">Login</button>
+                     <button type="button " class="btn btn-outline-light " style="margin-left:5px" [routerLink]="['login']" (click)=" show = !show">Sign in</button>
                   </span>
 
 
